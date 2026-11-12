@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8342:8342"
+    environment:
+      PORTA: "8342"
+  banco:
+    image: postgres:11
+    environment:
+      POSTGRES_USER: market
+      POSTGRES_PASSWORD: NXsgPMLtt6feGgWLEzrUHSMP
